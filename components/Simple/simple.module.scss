@@ -1,0 +1,24 @@
+.wrapper {
+  background-color: aqua;
+  &Green {
+    background-color: lightgreen;
+  }
+}
+.container {
+  padding: 1rem;
+  margin: 0 1rem;
+  // composes: container from global;
+}
+.row {
+  // composes: row from global;
+  &Shadow {
+    box-shadow: 2px 2px 5px 5px;
+  }
+  &Border {
+    border: 2px solid black;
+  }
+}
+.col {
+  padding: 0 1rem;
+  // composes: col from global;
+}
